@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Ticket Watcher — Manual Capture",
+  "version": "1.0",
+  "description": "Capture ticket details (ticket id, consumer, phones, creator) from the page on demand.",
+  "permissions": ["scripting", "storage", "activeTab", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Ticket Watcher"
+  }
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Ticket Watcher</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 360px; padding: 12px; }
+    button { margin: 6px 0; padding: 8px 10px; border-radius: 6px; cursor: pointer; }
+    .field { margin: 6px 0; }
+    .label { font-weight: 600; font-size: 13px; }
+    .value { font-size: 13px; color: #222; margin-top: 4px; }
+    pre { background:#f4f4f4; padding:8px; border-radius:6px; overflow:auto;}
+  </style>
+</head>
+<body>
+  <h3>Ticket Watcher</h3>
+
+  <div>
+    <button id="captureBtn">Capture from active tab</button>
+    <button id="exportBtn">Export CSV</button>
+    <button id="clearBtn">Clear saved</button>
+  </div>
+
+  <div style="margin-top:10px">
+    <div class="label">Last capture</div>
+    <div id="lastCapture" class="value"><em>No captures yet</em></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
